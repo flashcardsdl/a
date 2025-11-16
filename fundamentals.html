@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fundamentals of Nursing Pharmacology</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Nunito:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1>Fundamentals of Nursing Pharmacology</h1>
+        <p class="byline">Click on an image to expand.</p>
+    </header>
+
+    <button class="back-btn" onclick="window.location.href='index.html'">
+    ⬅ Back to Home
+    </button>
+
+
+    <main class="gallery-section">
+        <div class="gallery-grid">
+            <div class="gallery-card polaroid" data-name="Fundamentals 24" data-img="fundamentals/24.webp">
+                <img src="fundamentals/24.webp" alt="Medicine Name 4">
+                <h3>The Nursing Process and Drug Therapy</h3>
+            </div>
+            <div class="gallery-card polaroid" data-name="Medicine Name 5" data-img="fundamentals/25.webp">
+                <img src="fundamentals/25.webp" alt="Medicine Name 5">
+                <h3>Preventing and Responding to medication Errors</h3>
+            </div>
+            <div class="gallery-card polaroid" data-name="Medicine Name 6" data-img="fundamentals/26.webp">
+                <img src="fundamentals/26.webp" alt="Medicine Name 6">
+                <h3>Pharmacologic Principles</h3>
+            </div>
+            <div class="gallery-card polaroid" data-name="Medicine Name 7" data-img="fundamentals/27.webp">
+                <img src="fundamentals/27.webp" alt="Medicine Name 7">
+                <h3>Lifespan Considerations</h3>
+            </div>
+            <div class="gallery-card polaroid" data-name="Medicine Name 8" data-img="fundamentals/28.webp">
+                <img src="fundamentals/28.webp" alt="Medicine Name 8">
+                <h3>Over-the-Counter and Herbal Supplements</h3>
+            </div>
+            <div class="gallery-card polaroid" data-name="Medicine Name 9" data-img="fundamentals/29.webp">
+                <img src="fundamentals/29.webp" alt="Medicine Name 9">
+                <h3>Cultural, Legal, and Ethical Considerations</h3>
+            </div>
+            <div class="gallery-card polaroid" data-name="Medicine Name 10" data-img="fundamentals/30.webp">
+                <img src="fundamentals/30.webp" alt="Medicine Name 10">
+                <h3>Quick Study Sheet</h3>
+            </div>
+        </div>
+    </main>
+
+        <!-- Modal -->
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+
+        <!-- Image displayed in modal -->
+        <img class="modal-img" src="" alt="Fundamentals">
+
+        <!-- New navigation buttons -->
+        <div class="modal-nav prev" id="modalPrev">&#10094;</div>
+        <div class="modal-nav next" id="modalNext">&#10095;</div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

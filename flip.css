@@ -1,0 +1,53 @@
+/* Flashcards */
+.flashcard {
+    perspective: 1000px;
+    cursor: pointer;
+    border-radius: 12px;
+    background-color: #fdf6e3;
+    border: 1px solid #d4c4a8;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    width: 100%;
+    max-width: 600px;
+    display: inline-block;
+    position: relative; /* needed for absolute back image */
+    background-color: #fdf6e3; /* soft beige */
+    border: 3px solid #d4c4a8; /* subtle brown outline */
+}
+
+
+/* Images */
+.flashcard img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    transition: transform 0.6s;
+    filter: brightness(0.95) sepia(0.1) saturate(0.9);
+}
+
+/* Stack front/back properly */
+.flashcard .front {
+    position: relative; /* natural flow defines height */
+    transform: rotateY(0deg);
+    z-index: 2;
+}
+
+.flashcard .back {
+    position: absolute; /* stacked exactly over front */
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: rotateY(180deg);
+    z-index: 1;
+}
+
+/* Flip on click */
+.flashcard.flipped .front {
+    transform: rotateY(180deg);
+}
+
+.flashcard.flipped .back {
+    transform: rotateY(0deg);
+}
